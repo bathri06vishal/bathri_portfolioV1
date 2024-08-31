@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+ nav{
+    width: 100%;
+    position:sticky !important;
+    left:0;
+    top:0;
+    box-shadow: 0px 5px 8px rgb(0, 0,0,.5);
+ }
+ .navbar-brand{
+    font-weight:600;
+ }
+ .nav-link{
+    color:white !important;
+    border-bottom:1px solid transparent;
+ }
+ .nav-link:hover{
+    border-bottom:1px solid white;
+ }
+
+#home{
+   width: 100%;
+   height:100vh;
+   background:linear-gradient(rgba(0,0,0,.4),rgb(0,0,0,.6)),url(future.png);
+   background-size:cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   color: white;
+   flex-direction: column;
+}
+   
+
+@keyframes text {
+   0% {
+     opacity: 0;
+   }
+   25% {
+     opacity: 1;
+   }
+   75% {
+     opacity: 1;
+   }
+   100% {
+     opacity: 0;
+   }
+ }
+
+ #home p {
+   position: absolute;
+   top: 50%;
+   font-size: 100px;
+   opacity: 0;
+   animation: text 3s ease-in-out;
+ }
+ #home p:nth-child(1){
+   animation-delay: 0s;
+ }
+#home p:nth-child(2){
+   animation-delay: 3s;
+ }
+ #home p:nth-child(3){
+   animation-delay: 6s;
+ }
+ #home p:nth-child(4){
+   animation-delay: 9s;
+ }
+
+ 
+ 
+ @keyframes text {
+   50%{
+      opacity: 1;
+   }
+   100%{
+      opacity: 0;
+   
+   }
+}
+
+ 
+@media screen and (max-width:576px){
+   #home p{
+      font-size: 80px;
+      }
+}
+#home span{
+   color:pink;
+}
+#about{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #ff75a0;
+}
+.circle{
+   width: 400px;
+   height: 400px; 
+   background: #b90a56;
+   border-radius:50%;
+   position: relative;
+   box-shadow: 0px 5px 12px rgb(0, 0,0,.7);
+   margin-bottom: 3%;
+   margin-top: 8%;
+   transition: 1s;
+
+}
+.circle img{
+   position:absolute;
+   height:350px;
+   top:0%;
+   left:35%;
+   border-radius:50%;
+   filter:drop-shadow(0px 30px 15px rgb(0,0,0,0.4) ) ;
+}
+.circle:hover{
+   width: 600px;
+   height: 400px;
+   border-radius:10px;
+   transition:1s;
+}
+.circle:hover img{
+   position:absolute;
+   top:0%;
+   left: 0%;
+   transition:1s;
+}
+.circle:hover .content {
+   position: absolute;
+   top: 10%;
+   right: 0;
+   color: white;
+   width: 50%;
+   opacity: 1;
+   transition: 1s;
+}
+.circle .content{
+   opacity: 0;
+}
+
+@media screen and (max-width:576px) {
+   .circle{
+      width: 400px;
+      height: 400px; 
+      background:#b90a56;
+      border-radius:50%;
+      position: relative;
+      box-shadow: 0px 5px 12px rgb(0, 0,0,.7);
+      margin-bottom: 3%;
+      margin-top: 8%;
+      transition: 1s;
+   }
+   .circle:hover img{
+      position:absolute;
+      top:0%;
+      left: 0%;
+      transition:1s;
+   }
+   .circle img{
+      position:absolute;
+      height:350px;
+      top:0%;
+      left:35%;
+      border-radius:50%;
+      filter:drop-shadow(0px 30px 15px rgb(0,0,0,0.4) );
+   }
+   .circle:hover img{
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      transition: 1s;
+   }
+
+}
+#skills {
+   padding-top: 5%;
+   background:rgb(240, 237, 237)
+}
+#skills.container{
+   margin-top: 6%;
+   margin-bottom:6%;
+}
+label{
+   font: size 20px;
+}
+.progress{
+   height:30px !important;
+   box-shadow: 2px 4px 5px grey,-2px -2px 5px rgb(243, 242, 242);
+}
+.progress:hover{
+   box-shadow:2px 4px 5px wheat -2px -2px 5px rgb(240, 234, 234);
+}
+.container label{
+    background-color: rgb(255, 255, 255)
+   
+
+}
+
+#Skills{
+   width: 100%;
+height: 100vh;
+background: linear-gradient(rgb(0,0,0,.4),rgb(0,0,0,.6)),url(cir.jpg);
+}
+.slide .item:nth-child(3){
+   left: 50%;
+}
+.slide .item:nth-child(4){
+   left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+   left: calc(50% + 440px);
+}
+
+
+#Project {
+   width: 100%;
+   height:100vh;
+   background: linear-gradient(rgb(0,0,0,.4),rgb(0,0,0,.6)),url(doodle.jpg);
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* 3 columns */
+   grid-template-rows: repeat(3, auto); /* 3 rows */
+   grid-gap: 10px;
+   padding: 10px;
+ }
+ .gallery-item img {
+   width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 5px;
+   transition: transform 0.3s ease;
+ }
+
+ /* Hover effect */
+ .gallery-item img:hover {
+   transform: scale(1.05); /* Scale up the image on hover */
+ }
+ 
+#contact{
+    .social-links{
+      width: 100px; /* Adjust the width as needed */
+      height: auto;
+}
+}
