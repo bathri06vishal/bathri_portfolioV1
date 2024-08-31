@@ -1,4 +1,4 @@
-hi my name is bathri
+HI my name is bathri
 #U-untrack(unstaged) into stage(git add <text name>)
  simple:
  working directory--->(git add)--->stage area--->(git commit)--->repository
